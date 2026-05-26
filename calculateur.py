@@ -4,6 +4,8 @@ def calculer_tva(prix_ht: float) -> float:
 def calculer_pourboire(addition: float, pourcentage: float) -> float:
    return addition * (pourcentage / 100)
 
+def calculer_remise(prix: float, remise: float) -> float:
+    return prix * (1 - remise / 100)
 
 prix_ttc = calculer_tva(100)
 print(f"Total: {prix_ttc} euros.")
